@@ -84,6 +84,19 @@ As explained in the VL53L5CX sensor operating model description for the Facepod,
 only use the TOF data from the 4 zones in the middle of the sensor. Namely zones: 5, 6, 9, 10. 
 The service will also reject any TOF values that are not in the range of 10.0 mm to 1219.0 mm (approximately 4 feet).
 
+## Usage
+
+Find the .NET GUI application, ProximityClient.exe, and launch it. 
+
+![screenshot](https://github.com/davidkilp/FacepodProxmityClient/blob/master/Screenshot-ProximityDetectClient.png)
+
+To request a single distance request from the service press the "Single Request" button. 
+To display continuous distance updates from the service press the "Start" button and the
+display will update as fast as the service can supply data.
+
+
+## Python client example 
+
 As a further example of the multi-language support for ZeroMQ. Here is a simple client in Python:
 
 ```
